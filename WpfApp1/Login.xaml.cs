@@ -24,11 +24,14 @@ public partial class Login : Window
             if (first.Role == 1)
             {
                 window.UsersPlusGrid.Visibility = Visibility.Hidden;
+                Helper.isAdmin = false;
             }
             else
             {
                 window.UsersDataGrid.Visibility = Visibility.Hidden;
+                Helper.isAdmin = true;
             }
+            window.LoadData();
             window.Show();
         }
         catch (Exception)

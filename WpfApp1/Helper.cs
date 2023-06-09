@@ -4,6 +4,7 @@ namespace WpfApp1;
 public class Helper
 {
     private static RkisContext _db;
+    public static bool isAdmin; 
 
     public static RkisContext GetContext()
     {

@@ -1,27 +1,21 @@
-﻿<Window x:Class="WpfApp1.MainWindow"
+﻿<Window x:Class="WpfApp1.SearchResult"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Width="1280" Height="720"  HorizontalAlignment="Center" VerticalAlignment="Center">
-    <Grid> 
+        Title="Search" Height="450" Width="800">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-            <DataGrid Grid.ColumnSpan="4"
-                Name="UsersDataGrid"
-                ColumnWidth="*"
-                CanUserDeleteRows="False"
-                CanUserAddRows="False"
-                AutoGenerateColumns="False">
+        <DataGrid
+                  Name="UsersDataGrid"
+                  ColumnWidth="*"
+                  CanUserDeleteRows="False"
+                  CanUserAddRows="False"
+                  AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Логин" Binding="{Binding Login}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Пароль" Binding="{Binding Password}"></DataGridTextColumn>
@@ -30,7 +24,7 @@
                     <DataGridTextColumn Header="Отчество" Binding="{Binding Fathername}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
-        <DataGrid Grid.Row="0" Grid.ColumnSpan="4" Grid.Column="0" Name="UsersPlusGrid"
+        <DataGrid Name="UsersPlusGrid"
             ColumnWidth="*"
             CanUserDeleteRows="False"
             CanUserAddRows="False"
@@ -44,9 +38,5 @@
                 <DataGridTextColumn Header="Роль" Binding="{Binding RoleNavigation.Name}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Row="1" Grid.Column="0" Content="ConfirmChanges" Click="UpdateSelected_Click"></Button>
-        <Button Grid.Row="1" Grid.Column="1" Content="Delete" Click="DeleteSelected_Click"></Button>
-        <Button Grid.Row="1" Grid.Column="2" Content="Create" Click="Create_Click"></Button>
-        <Button Grid.Row="1" Grid.Column="3" Content="Find" Click="Find_Click"></Button>
     </Grid>
 </Window>

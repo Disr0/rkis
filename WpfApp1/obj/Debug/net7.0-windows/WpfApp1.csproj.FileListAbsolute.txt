@@ -66,3 +66,7 @@ C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.cs
 C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Login.g.cs
 C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1_MarkupCompile.lref
 C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Login.baml
+C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\SearchQuery.g.cs
+C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\SearchResult.g.cs
+C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\SearchQuery.baml
+C:\Users\Disro\RiderProjects\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\SearchResult.baml

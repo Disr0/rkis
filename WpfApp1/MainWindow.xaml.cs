@@ -14,10 +14,9 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            LoadData();
         }
 
-        private void LoadData()
+        public void LoadData()
         {
             if (UsersPlusGrid.Visibility == Visibility.Visible)
             {
@@ -64,6 +63,19 @@ namespace WpfApp1
                 Helper.GetContext().SaveChanges();
                 LoadData();
             }
+        }
+
+        private void Create_Click(object sender, RoutedEventArgs e)
+        {
+            var register = new Register();
+            register.ShowDialog();
+            LoadData();
+        }
+
+        private void Find_Click(object sender, RoutedEventArgs e)
+        {
+            var search = new SearchQuery();
+            search.ShowDialog();
         }
     }
 }
